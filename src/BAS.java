@@ -31,6 +31,8 @@ public class BAS {
      * Add Operator As Boolean:
      * ------------------------
      *
+     * add several binary values from type char, and return boolean value.
+     *
      * @param chars like '1', '0', '0', '1', ... ext.
      * @return boolean
      */
