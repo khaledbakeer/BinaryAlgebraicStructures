@@ -94,7 +94,7 @@ public class BAS {
      * @param args Strings from type "101", "100", "111", ... ext.
      * @return String from type "110".
      */
-    private static String Add(String... args) {
+    public static String Add(String... args) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < args[0].length(); i++) {
             char[] row = new char[args.length];
