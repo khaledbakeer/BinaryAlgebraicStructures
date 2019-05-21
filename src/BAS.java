@@ -90,6 +90,12 @@ public class BAS {
      * ----
      * <p>
      * add several Strings from type of binary digits using Algebraic Structures (Addition Operator).
+     * <p>
+     * + | 0 | 1
+     * ----------
+     * 0 | 0 | 1
+     * ----------
+     * 1 | 1 | 0
      *
      * @param args Strings from type "101", "100", "111", ... ext.
      * @return String from type "110".
