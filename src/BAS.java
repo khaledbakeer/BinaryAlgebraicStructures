@@ -165,25 +165,21 @@ public class BAS {
      * ----------
      * 1 | 1 | 0
      *
-     * @param args Strings from type "101", "100", "111", ... ext.
+     * @param strings Strings from type "101", "100", "111", ... ext.
      * @return String from type "110".
      */
-    public static String Add(String... args) {
-
-        // TODO not all args have the same digit counts!
-        // "10", "110" no error -> 11
-        // "111", "11" -> Error: ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
+    public static String Add(String... strings) {
+        int max = getMaxLengthOfStrings(strings);
+        String[] args = getModifiedArrays(strings);
 
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < args[0].length(); i++) {
+        for (int i = 0; i < max; i++) {
             char[] row = new char[args.length];
             for (int j = 0; j < args.length; j++) {
-                row[j] = args[j].toCharArray()[i];
+                if (args[j].length() == max) row[j] = args[j].toCharArray()[i];
             }
             sb.append(AdditionOperatorAsChar(row));
         }
         return sb.toString();
     }
-
-    // TODO multiplication
 }
