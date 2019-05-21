@@ -14,4 +14,16 @@ public class BAS {
     private static boolean bitOf(char input) {
         return (input == '1');
     }
+
+    /**
+     * charOf:
+     * -------
+     *
+     * @param input boolean
+     * @return char '1' or '0'.
+     */
+    private static char charOf(boolean input) {
+        return (input) ? '1' : '0';
+    }
+
 }
