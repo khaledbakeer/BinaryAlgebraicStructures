@@ -86,6 +86,21 @@ public class BAS {
     }
 
     /**
+     * get Max Length Of Strings:
+     * --------------------------
+     *
+     * @param args Strings
+     * @return max length of all Strings.
+     */
+    private static int getMaxLengthOfStrings(String... args) {
+        int max = 0;
+        for (String x : args) {
+            if (x.length() > max) max = x.length();
+        }
+        return max;
+    }
+
+    /**
      * Add:
      * ----
      * <p>
