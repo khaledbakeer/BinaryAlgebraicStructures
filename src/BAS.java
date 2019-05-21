@@ -129,6 +129,31 @@ public class BAS {
     }
 
     /**
+     * get Modified Arrays:
+     * --------------------
+     * <p>
+     * Convert string arguments with different string lengths to be them length uniq.
+     * <p>
+     * example: ("101011", "10", "001") -> String[] = {"101011", "000010", "000001"}
+     *
+     * @param args Strings
+     * @return String[] with uniq string length
+     */
+    private static String[] getModifiedArrays(String... args) {
+        int max = getMaxLengthOfStrings(args);
+        for (int i = 0; i < args.length; i++) {
+            if (args[i].length() < max) {
+                char[] temp = new char[max];
+                for (int j = 0; j < temp.length; j++) {
+                    temp[j] = getModifiedArray(max, args[i].toCharArray())[j];
+                }
+                args[i] = String.valueOf(temp);
+            }
+        }
+        return args;
+    }
+
+    /**
      * Add:
      * ----
      * <p>
