@@ -22,6 +22,8 @@
  * SOFTWARE.
  */
 
+package de.khaled.BinaryAlgebraicStructures;
+
 /**
  * Binary Algebraic Structures:
  * ----------------------------
