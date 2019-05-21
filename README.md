@@ -16,8 +16,39 @@ Implement this Class to your project and call the method that you would to use, 
 
 ## Examples:
 
+````java
+/*
+    public static void main(String[] args) {
+        System.out.println(BAS.Mult("101", "100", "111")); // output: 100
+        System.out.println(BAS.Add("101", "100", "111")); // output: 110
+    }
+*/
+````
+
 ## Notes:
 
->  BAS.Add would work as [`"XOR operator"`](https://en.wikipedia.org/wiki/XOR_gate).
+>  Addition: BAS.Add would work as [`"XOR operator"`](https://en.wikipedia.org/wiki/XOR_gate) or (Z2, +) math-group.
 
->  BAS.Mult works as [`"and operator"`](https://en.wikipedia.org/wiki/Bitwise_operation#AND) .
+````java
+    /*
+     * + | 0 | 1
+     * ----------
+     * 0 | 0 | 1
+     * ----------
+     * 1 | 1 | 0
+     *
+     */
+````
+
+>  Multiplication: BAS.Mult works as [`"and operator"`](https://en.wikipedia.org/wiki/Bitwise_operation#AND) (Z2, *) math-group.
+
+````java
+    /*
+     * * | 0 | 1
+     * ----------
+     * 0 | 0 | 0
+     * ----------
+     * 1 | 0 | 1
+     *
+     */
+````
