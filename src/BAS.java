@@ -43,4 +43,21 @@ public class BAS {
         }
         return tmp;
     }
+
+    /**
+     * Addition Operator As Char:
+     * --------------------------
+     * <p>
+     * add several binary values from type char, and return also char value.
+     *
+     * @param chars like '1', '0', '0', '1', ... ext.
+     * @return char also.
+     */
+    private static char AdditionOperatorAsChar(char... chars) {
+        boolean tmp = false;
+        for (char x : chars) {
+            tmp = tmp ^ bitOf(x);
+        }
+        return (tmp) ? '1' : '0';
+    }
 }
