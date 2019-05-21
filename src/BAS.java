@@ -160,6 +160,7 @@ public class BAS {
      * @param strins strings.
      */
     private static void checkBinaryValidate(String... strins) {
+        if (strins.length <= 0) throw new IllegalArgumentException("it should be at least one argument.");
         for (String x : strins) {
             if (x.length() == 0) throw new IllegalArgumentException("Your entries cannot be empty Strings!");
             for (int i = 0; i < x.length(); i++) {
@@ -186,6 +187,7 @@ public class BAS {
      * @return String from type "110".
      */
     public static String Add(String... strings) {
+        checkBinaryValidate(strings);
         int max = getMaxLengthOfStrings(strings);
         String[] args = getModifiedArrays(strings);
 
