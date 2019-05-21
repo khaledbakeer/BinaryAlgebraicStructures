@@ -154,6 +154,23 @@ public class BAS {
     }
 
     /**
+     * check Binary Validate:
+     * ----------------------
+     *
+     * @param strins strings.
+     */
+    private static void checkBinaryValidate(String... strins) {
+        for (String x : strins) {
+            if (x.length() == 0) throw new IllegalArgumentException("Your entries cannot be empty Strings!");
+            for (int i = 0; i < x.length(); i++) {
+                char tmp = x.toCharArray()[i];
+                if (tmp != '0' && tmp != '1')
+                    throw new IllegalArgumentException("Please correct your entries, only binaries will be accepted!");
+            }
+        }
+    }
+
+    /**
      * Add:
      * ----
      * <p>
