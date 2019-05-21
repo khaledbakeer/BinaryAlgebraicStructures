@@ -78,9 +78,23 @@ public class BAS {
      * @return char also.
      */
     private static char AdditionOperatorAsChar(char... chars) {
-        boolean tmp = false;
+        boolean tmp = false;  // Neutral element
         for (char x : chars) {
             tmp = tmp ^ bitOf(x);
+        }
+        return (tmp) ? '1' : '0';
+    }
+
+    /**
+     * MultiplicationOperatorAsChar
+     *
+     * @param chars like '1', '0', '0', '1', ... ext.
+     * @return char also.
+     */
+    private static char MultiplicationOperatorAsChar(char... chars) {
+        boolean tmp = true; // Neutral element
+        for (char x : chars) {
+            tmp = tmp && bitOf(x);
         }
         return (tmp) ? '1' : '0';
     }
