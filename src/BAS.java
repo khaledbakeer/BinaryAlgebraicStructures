@@ -26,4 +26,19 @@ public class BAS {
         return (input) ? '1' : '0';
     }
 
+
+    /**
+     * Add Operator As Boolean:
+     * ------------------------
+     *
+     * @param chars like '1', '0', '0', '1', ... ext.
+     * @return boolean
+     */
+    private static boolean AdditionOperatorAsBoolean(char... chars) {
+        boolean tmp = false;
+        for (char x : chars) {
+            tmp = tmp ^ bitOf(x);
+        }
+        return tmp;
+    }
 }
