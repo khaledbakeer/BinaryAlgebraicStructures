@@ -10,9 +10,9 @@ Implement this Class to your project and call the method that you would to use, 
 
 ### Import manually:
 
-Download [Jar File](BinaryAlgebraicStructure.jar).
+* Download [Jar File](BinaryAlgebraicStructure.jar).
 
-Using Intellij: File -> Project Structure -> Libraries -> (+) symbol -> From Jar ... Import just [downloaded file](BinaryAlgebraicStructure.jar).
+* Using Intellij: File -> Project Structure -> Libraries -> (+) symbol -> From Jar ... Import just [downloaded file](BinaryAlgebraicStructure.jar).
 
 ## Examples:
 
