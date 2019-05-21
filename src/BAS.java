@@ -95,6 +95,11 @@ public class BAS {
      * @return String from type "110".
      */
     public static String Add(String... args) {
+
+        // TODO not all args have the same digit counts!
+        // "10", "110" no error -> 11
+        // "111", "11" -> Error: ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
+
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < args[0].length(); i++) {
             char[] row = new char[args.length];
@@ -105,4 +110,6 @@ public class BAS {
         }
         return sb.toString();
     }
+
+    // TODO multiplication
 }
