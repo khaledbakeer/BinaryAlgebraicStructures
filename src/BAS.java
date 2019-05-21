@@ -215,4 +215,36 @@ public class BAS {
         }
         return sb.toString();
     }
+
+    /**
+     * Mult:
+     * -----
+     * <p>
+     * Multiplicat several Strings from type of binary digits using Algebraic Structures (Multiplication Operator).
+     * <p>
+     * * | 0 | 1
+     * ----------
+     * 0 | 0 | 0
+     * ----------
+     * 1 | 0 | 1
+     *
+     * @param strings Strings from type "101", "100", "111", ... ext.
+     * @return String from type "100".
+     */
+    public static String Mult(String... strings) {
+        checkBinaryValidate(strings);
+        int max = getMaxLengthOfStrings(strings);
+        String[] args = getModifiedArrays(strings);
+
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < max; i++) {
+            char[] row = new char[args.length];
+            for (int j = 0; j < args.length; j++) {
+                if (args[j].length() == max) row[j] = args[j].toCharArray()[i];
+            }
+            sb.append(MultiplicationOperatorAsChar(row));
+        }
+        return sb.toString();
+    }
+
 }
