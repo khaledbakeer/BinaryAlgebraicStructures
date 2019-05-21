@@ -16,14 +16,6 @@ Implement this Class to your project and call the method that you would to use, 
 
 ## Examples:
 
-````java
-    public static void main(String[] args) {
-        System.out.println(BAS.Mult("101", "100", "111")); // output: 100
-        System.out.println(BAS.Add("101", "100", "111")); // output: 110
-    }
-
-````
-
 ## Notes:
 
 >  BAS.Add would work as [`"XOR operator"`](https://en.wikipedia.org/wiki/XOR_gate).
