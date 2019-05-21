@@ -100,6 +100,34 @@ public class BAS {
         return max;
     }
 
+
+    /**
+     * get Modified Array:
+     * -------------------
+     * <p>
+     * convert old array with lower counts of binary digits to an array with the same value,
+     * but with zeros at the beginning.
+     * <p>
+     * example: (10, "101001") -> "0000101001".
+     *
+     * @param max int new max index of the new array.
+     * @param old array to be modified, "101001".
+     * @return new modified array, "0000101001".
+     */
+    private static char[] getModifiedArray(int max, char[] old) {
+        char[] newArray = new char[max];
+
+        if (max > old.length) {
+            for (int i = (max - 1); i >= 0; i--) {
+                int x = i - (max - old.length);
+                if (x < 0) newArray[i] = '0';
+                else newArray[i] = old[x];
+            }
+        }
+
+        return newArray;
+    }
+
     /**
      * Add:
      * ----
