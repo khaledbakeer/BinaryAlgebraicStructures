@@ -8,6 +8,12 @@ Addition and multiplication on numbers are the prototypical example of an operat
 
 Implement this Class to your project and call the method that you would to use, see examples below.
 
+### Import manually:
+
+Download [Jar File](BinaryAlgebraicStructure.jar).
+
+Using Intellij: File -> Project Structure -> Libraries -> (+) symbol -> From Jar ... Import just [downloaded file](BinaryAlgebraicStructure.jar).
+
 ## Examples:
 
 ````java
