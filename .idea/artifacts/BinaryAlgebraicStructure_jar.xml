@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BinaryAlgebraicStructure:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/BinaryAlgebraicStructure_jar</output-path>
+    <root id="archive" name="BinaryAlgebraicStructure.jar">
+      <element id="module-output" name="BinaryAlgebraicStructure" />
+    </root>
+  </artifact>
+</component>
