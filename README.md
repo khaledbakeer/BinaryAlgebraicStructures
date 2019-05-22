@@ -1,4 +1,4 @@
-# [BinaryAlgebraicStructures](https://en.wikipedia.org/wiki/Algebraic_structure)
+# [Binary Algebraic Structures](https://en.wikipedia.org/wiki/Algebraic_structure)
 
 ## Introduction:
 
