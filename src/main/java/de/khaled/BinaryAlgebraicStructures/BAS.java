@@ -31,6 +31,13 @@ package de.khaled.BinaryAlgebraicStructures;
 public class BAS {
 
     /**
+     * Don't let anyone instantiate this class.
+     */
+    private BAS() {
+
+    }
+
+    /**
      * bitOf:
      * ------
      *
